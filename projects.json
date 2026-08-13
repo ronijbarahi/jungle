@@ -1,0 +1,276 @@
+{
+  "projects": [
+    {
+      "slug": "himalayan-java",
+      "no": "01",
+      "name": "Project One",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/himalayan-java.png",
+      "heroImage": "demo/himalayan-java-hero.png",
+      "imageA": "demo/himalayan-java-a.png",
+      "imageB": "demo/himalayan-java-b.png",
+      "imageC": "demo/himalayan-java-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    },
+    {
+      "slug": "khalti",
+      "no": "02",
+      "name": "Project Two",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/khalti.png",
+      "heroImage": "demo/khalti-hero.png",
+      "imageA": "demo/khalti-a.png",
+      "imageB": "demo/khalti-b.png",
+      "imageC": "demo/khalti-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    },
+    {
+      "slug": "sherpa-brewery",
+      "no": "03",
+      "name": "Project Three",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/sherpa-brewery.png",
+      "heroImage": "demo/sherpa-brewery-hero.png",
+      "imageA": "demo/sherpa-brewery-a.png",
+      "imageB": "demo/sherpa-brewery-b.png",
+      "imageC": "demo/sherpa-brewery-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    },
+    {
+      "slug": "everest-trails",
+      "no": "04",
+      "name": "Project Four",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/everest-trails.png",
+      "heroImage": "demo/everest-trails-hero.png",
+      "imageA": "demo/everest-trails-a.png",
+      "imageB": "demo/everest-trails-b.png",
+      "imageC": "demo/everest-trails-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    },
+    {
+      "slug": "basanta-textiles",
+      "no": "05",
+      "name": "Project Five",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/basanta-textiles.png",
+      "heroImage": "demo/basanta-textiles-hero.png",
+      "imageA": "demo/basanta-textiles-a.png",
+      "imageB": "demo/basanta-textiles-b.png",
+      "imageC": "demo/basanta-textiles-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    },
+    {
+      "slug": "post-cast",
+      "no": "06",
+      "name": "Project Six",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/post-cast.png",
+      "heroImage": "demo/post-cast-hero.png",
+      "imageA": "demo/post-cast-a.png",
+      "imageB": "demo/post-cast-b.png",
+      "imageC": "demo/post-cast-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    },
+    {
+      "slug": "goldstar",
+      "no": "07",
+      "name": "Project Seven",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/goldstar.png",
+      "heroImage": "demo/goldstar-hero.png",
+      "imageA": "demo/goldstar-a.png",
+      "imageB": "demo/goldstar-b.png",
+      "imageC": "demo/goldstar-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    },
+    {
+      "slug": "marks",
+      "no": "08",
+      "name": "Project Eight",
+      "tags": "Add scope",
+      "client": "Add client name",
+      "year": "20__",
+      "scope": "Add scope",
+      "role": "Add your role",
+      "lede": "One line describing what this project was.",
+      "challenge": "What problem did the client have before you started?",
+      "approach": "What did you make, and why that answer?",
+      "quote": "",
+      "quoteBy": "",
+      "thumb": "demo/marks.png",
+      "heroImage": "demo/marks-hero.png",
+      "imageA": "demo/marks-a.png",
+      "imageB": "demo/marks-b.png",
+      "imageC": "demo/marks-c.png",
+      "results": [
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        },
+        {
+          "figure": "—",
+          "label": "Add a real, checkable result"
+        }
+      ]
+    }
+  ]
+}
