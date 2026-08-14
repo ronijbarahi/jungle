@@ -1,8 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jungle. — Brand & Digital Design Studio in Kathmandu</title>
+<meta name="description" content="Jungle. is an independent brand and digital design studio in Lalitpur, Kathmandu. Identity, packaging, websites and art direction for Nepali businesses.">
+<link rel="canonical" href="https://designbyjungle.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jungle.">
+<meta property="og:locale" content="en_NP">
+<meta property="og:title" content="Jungle. — Brand & Digital Design Studio in Kathmandu">
+<meta property="og:description" content="Jungle. is an independent brand and digital design studio in Lalitpur, Kathmandu. Identity, packaging, websites and art direction for Nepali businesses.">
+<meta property="og:url" content="https://designbyjungle.com/">
+<meta property="og:image" content="https://designbyjungle.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jungle. — Brand & Digital Design Studio in Kathmandu">
+<meta name="twitter:description" content="Jungle. is an independent brand and digital design studio in Lalitpur, Kathmandu. Identity, packaging, websites and art direction for Nepali businesses.">
+<meta name="twitter:image" content="https://designbyjungle.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Jungle.","alternateName":"Jungle Designs","url":"https://designbyjungle.com/","logo":"https://designbyjungle.com/icon-512.png","image":"https://designbyjungle.com/og-image.png","description":"Independent brand and digital design studio in Lalitpur, Kathmandu, Nepal.","email":"ronij.jungle@gmail.com","telephone":"+977-9808132072","address":{"@type":"PostalAddress","addressLocality":"Lalitpur","addressRegion":"Bagmati Province","addressCountry":"NP"},"areaServed":"NP","sameAs":["https://www.instagram.com/jungledesigns"],"knowsAbout":["Brand identity","Packaging design","Web design","Art direction"]}</script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -223,16 +245,11 @@
 </section>
 
 <sc-if value="{{ showClients }}" hint-placeholder-val="{{ true }}">
-<section style="padding:72px 44px;border-bottom:1px solid #e6e6e2">
-  <h2 style="margin:0 0 40px;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:#9a9a9a">Our clients</h2>
-  <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:16px 40px;font-size:clamp(22px,2.6vw,34px);font-weight:500;letter-spacing:-0.02em">
-    <span>Himalayan Java</span><span style="color:#ccc">/</span><span>Sherpa Brewery</span><span style="color:#ccc">/</span><span>Yeti Airlines</span><span style="color:#ccc">/</span><span>NIC Asia</span><span style="color:#ccc">/</span><span>Daraz</span><span style="color:#ccc">/</span><span>Goldstar</span><span style="color:#ccc">/</span><span>Khalti</span><span style="color:#ccc">/</span><span>Tootle</span>
-  </div>
-</section>
+
 </sc-if>
 
 <footer id="contact" style="padding:100px 44px 60px;background:#fff;color:#0a0a0a">
-  <a data-reveal="" href="mailto:hello@jungle.com.np" style="display:block;text-align:right;font-size:clamp(64px,10vw,170px);font-weight:500;letter-spacing:-0.03em;line-height:1">Let’s talk</a>
+  <a data-reveal="" href="mailto:ronij.jungle@gmail.com" style="display:block;text-align:right;font-size:clamp(64px,10vw,170px);font-weight:500;letter-spacing:-0.03em;line-height:1">Let’s talk</a>
   <div style="display:grid;grid-template-columns:220px 1fr 1fr 1fr;gap:48px;margin-top:200px;font-size:17px;line-height:1.6">
     <div><img src="assets/j-black.svg" alt="Jungle." style="height:64px;display:block"></div>
     <div>
@@ -244,7 +261,7 @@
       <h3 style="margin:0 0 28px;font-size:19px;font-weight:500">Contact</h3>
       <div style="display:flex;flex-direction:column;gap:2px;padding-left:52px">
         <a href="tel:+97715520000">+977 1 552 0000</a>
-        <a href="mailto:hello@jungle.com.np">hello@jungle.com.np</a>
+        <a href="mailto:ronij.jungle@gmail.com">ronij.jungle@gmail.com</a>
       </div>
     </div>
     <div>
@@ -322,14 +339,14 @@ class Component extends DCLogic {
       themeIcon: React.createElement('span', {dangerouslySetInnerHTML:{__html: this.isDark() ? SUN_SVG : MOON_SVG}, style:{display:'flex'}}),
       showClients: this.props.showClients ?? true,
       projects: [
-        {slot:'w1', no:'01', slug:'himalayan-java', name:'Himalayan Java', tags:'Rebrand · Packaging', placeholder:'Drop project image'},
-        {slot:'w2', no:'02', slug:'khalti', name:'Khalti', tags:'Identity · Web', placeholder:'Drop project image'},
-        {slot:'w3', no:'03', slug:'sherpa-brewery', name:'Sherpa Brewery', tags:'Packaging · Label', placeholder:'Drop project image'},
-        {slot:'w4', no:'04', slug:'everest-trails', name:'Everest Trails', tags:'Strategy · Identity', placeholder:'Drop project image'},
-        {slot:'w5', no:'05', slug:'basanta-textiles', name:'Basanta Textiles', tags:'Logotype · Print', placeholder:'Drop project image'},
-        {slot:'w6', no:'06', slug:'post-cast', name:'The Kathmandu Post-cast', tags:'Podcast · Motion', placeholder:'Drop project image'},
-        {slot:'w7', no:'07', slug:'goldstar', name:'Goldstar Shoes', tags:'Campaign · Social', placeholder:'Drop project image'},
-        {slot:'w8', no:'08', slug:'marks', name:'7 Years · 40+ Marks', tags:'Selected logotypes', placeholder:'Drop project image'}
+        {slot:'w1', no:'01', slug:'p-01', name:'Project 01', tags:'Rebrand · Packaging', placeholder:'Drop project image'},
+        {slot:'w2', no:'02', slug:'p-02', name:'Project 02', tags:'Identity · Web', placeholder:'Drop project image'},
+        {slot:'w3', no:'03', slug:'p-03', name:'Project 03', tags:'Packaging · Label', placeholder:'Drop project image'},
+        {slot:'w4', no:'04', slug:'p-04', name:'Project 04', tags:'Strategy · Identity', placeholder:'Drop project image'},
+        {slot:'w5', no:'05', slug:'p-05', name:'Project 05', tags:'Logotype · Print', placeholder:'Drop project image'},
+        {slot:'w6', no:'06', slug:'p-06', name:'Project 06', tags:'Podcast · Motion', placeholder:'Drop project image'},
+        {slot:'w7', no:'07', slug:'p-07', name:'Project 07', tags:'Campaign · Social', placeholder:'Drop project image'},
+        {slot:'w8', no:'08', slug:'p-08', name:'Project 08', tags:'Selected logotypes', placeholder:'Drop project image'}
       ].map(p => {
         const video = VIDEOS[p.slot];
         const ok = !!video && !this.state.videoFail[p.slot];
