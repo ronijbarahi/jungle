@@ -1,0 +1,104 @@
+backend:
+  name: github
+  repo: ronijbarahi/jungle
+  branch: main
+
+media_folder: demo
+public_folder: /demo
+
+collections:
+  - name: site
+    label: Jungle. website
+    files:
+      - name: projects
+        label: Projects
+        file: data/projects.json
+        format: json
+        description: >-
+          Every project on the homepage grid and its own case study page.
+          Drag the handles to reorder. Order here is the order on the site.
+        fields:
+          - name: projects
+            label: Projects
+            label_singular: Project
+            widget: list
+            summary: '{{fields.no}} — {{fields.name}}'
+            collapsed: true
+            fields:
+              - name: name
+                label: Project title
+                widget: string
+              - name: slug
+                label: URL slug
+                hint: Lowercase, no spaces. Becomes designbyjungle.com/project.html?p=your-slug. Do not change once shared.
+                widget: string
+                pattern: ['^[a-z0-9-]+$', 'Lowercase letters, numbers and hyphens only']
+              - name: 'no'
+                label: Card number
+                hint: The small number on the homepage grid, e.g. 01
+                widget: string
+              - name: client
+                label: Client name
+                widget: string
+                required: false
+              - name: year
+                label: Year
+                widget: string
+              - name: tags
+                label: Homepage tags
+                hint: Short, shown under the title on the homepage. e.g. Rebrand · Packaging
+                widget: string
+              - name: scope
+                label: Scope
+                hint: Longer version, shown on the project page. e.g. Rebrand · Packaging · Retail
+                widget: string
+              - name: role
+                label: Our role
+                widget: string
+              - name: lede
+                label: One-line summary
+                hint: The big sentence at the top of the project page.
+                widget: text
+              - name: challenge
+                label: The challenge
+                widget: text
+              - name: approach
+                label: Our approach
+                widget: text
+              - name: results
+                label: Results
+                label_singular: Result
+                widget: list
+                required: false
+                collapsed: false
+                summary: '{{fields.figure}} — {{fields.label}}'
+                fields:
+                  - name: figure
+                    label: Figure
+                    hint: e.g. +38%, 4 weeks, 12 outlets
+                    widget: string
+                  - name: label
+                    label: What it measures
+                    widget: string
+              - name: thumb
+                label: Homepage thumbnail
+                hint: The image in the homepage grid. Landscape works best.
+                widget: image
+                required: false
+              - name: hero
+                label: Hero image
+                hint: Large image at the top of the project page.
+                widget: image
+                required: false
+              - name: imageA
+                label: Image 2
+                widget: image
+                required: false
+              - name: imageB
+                label: Image 3
+                widget: image
+                required: false
+              - name: imageC
+                label: Image 4
+                widget: image
+                required: false
