@@ -236,50 +236,10 @@
 const LEAF_SVG = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5C3 14 6 5.5 19.5 4.5c1 12-7 15.5-12.5 14"></path><path d="M4.5 19.5C8 16 11.5 12 16 9.5"></path></svg>`;
 const MOON_SVG = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 14.6A8.6 8.6 0 0 1 9.4 3.8a8.6 8.6 0 1 0 10.8 10.8z"></path><path d="M13.4 10.6c1.6-.4 3.1.1 4.1 1.2"></path></svg>`;
 
-const PROJECTS = [
-  {slug:'p-01', no:'01', name:'Project 01', year:'2025', scope:'Rebrand · Packaging · Retail', role:'Strategy, identity, art direction',
-   lede:'A twenty-year-old coffee house, rebuilt around the mountain it was named after.',
-   challenge:'Nepal\u2019s best-known coffee chain had grown to forty outlets with forty different personalities. Signage, cups and interiors had drifted so far apart that no two cafes felt like the same brand.',
-   approach:'We rebuilt the identity around altitude \u2014 a contour-line system that scales from a cup sleeve to a shopfront, one warm palette, and a bean-origin naming structure that gives every roast a place on the map.'},
-  {slug:'p-02', no:'02', name:'Project 02', year:'2025', scope:'Identity · Web · Product',
-   role:'Identity, design system, web',
-   lede:'A digital wallet that needed to feel as trustworthy as a bank and as quick as a text message.',
-   challenge:'The client had outgrown a startup logo and a patchwork of screens. Every new feature added another shade of purple and another button style.',
-   approach:'One mark, one grid, one component library. We wrote the design system alongside the engineering team so the brand shipped with the product instead of after it.'},
-  {slug:'p-03', no:'03', name:'Project 03', year:'2024', scope:'Packaging · Label · Range',
-   role:'Naming, packaging, illustration direction',
-   lede:'Craft beer brewed at altitude, packaged for the shelf and the trail.',
-   challenge:'A strong local following, but a label that disappeared between international imports on a crowded fridge shelf.',
-   approach:'A modular label system: one fixed frame, one changing woodblock illustration per brew. Recognisable as a range from across the aisle, collectable one bottle at a time.'},
-  {slug:'p-04', no:'04', name:'Project 04', year:'2024', scope:'Strategy · Identity · Web',
-   role:'Brand strategy, identity, website',
-   lede:'A trekking company with thirty years of stories and no way to tell them.',
-   challenge:'Competing on price against dozens of near-identical operators, with a brand that said nothing about three decades of guiding experience.',
-   approach:'We repositioned around the guides themselves \u2014 named, photographed, credited. The identity borrows from route maps and permits; the site is built around the people who walk with you.'},
-  {slug:'p-05', no:'05', name:'Project 05', year:'2023', scope:'Logotype · Print · Identity',
-   role:'Logotype, identity, print',
-   lede:'A third-generation weaving house, given a mark worth stitching into the cloth.',
-   challenge:'Sixty years of craft hidden behind a generic wordmark and inconsistent labelling across every export market.',
-   approach:'A logotype drawn from loom geometry, a woven selvedge motif, and a print language built for hang tags, ledgers and export cartons alike.'},
-  {slug:'p-06', no:'06', name:'Project 06', year:'2023', scope:'Podcast · Motion · Social',
-   role:'Brand, motion system, production',
-   lede:'A daily news podcast that had to sound like the paper and look like the feed.',
-   challenge:'A trusted newspaper launching into audio with no visual language for a medium nobody watches \u2014 and a social feed that had to carry it.',
-   approach:'A waveform-derived motion system generated from each episode\u2019s own audio, so every clip is unique but unmistakably the same show.'},
-  {slug:'p-07', no:'07', name:'Project 07', year:'2022', scope:'Campaign · Social · Film',
-   role:'Campaign concept, art direction, film',
-   lede:'A national shoe brand talking to a generation that had never chosen it.',
-   challenge:'Enormous recognition, almost no desire. The brand was the shoe your father bought you, not the one you asked for.',
-   approach:'A campaign built entirely from real distances walked by real wearers \u2014 street cast, shot in the cities where the shoes actually go.'},
-  {slug:'p-08', no:'08', name:'7 Years, 40+ Marks', year:'2019 \u2014 2026', scope:'Logotypes · Selected',
-   role:'Identity design',
-   lede:'Seven years of logotypes, monograms and marks drawn in the studio.',
-   challenge:'Forty-odd identities made for forty-odd businesses, scattered across client folders and never shown together.',
-   approach:'We pulled the archive into one place \u2014 the sketches, the rejected routes and the marks that made it \u2014 as a record of how the studio actually draws.'}
-];
+const EMPTY = { slug: '', no: '', name: '', client: '', year: '', scope: '', role: '', lede: '', challenge: '', approach: '', results: [], thumb: '', hero: '', imageA: '', imageB: '', imageC: '' };
 
 class Component extends DCLogic {
-  state = { dark: null, slug: null };
+  state = { dark: null, slug: null, projects: [] };
   isDark() {
     if (this.state.dark != null) return this.state.dark;
     try { const v = localStorage.getItem('jungle-dark'); if (v != null) return v === '1'; } catch (e) {}
@@ -295,13 +255,19 @@ class Component extends DCLogic {
     else document.documentElement.removeAttribute('data-theme');
   }
   current() {
+    const list = this.state.projects;
+    if (!list.length) return EMPTY;
     const slug = this.state.slug || new URLSearchParams(location.search).get('p');
-    return PROJECTS.find(p => p.slug === slug) || PROJECTS[0];
+    return list.find(p => p.slug === slug) || list[0];
   }
   componentDidUpdate() { this.applyTheme(); }
   componentDidMount() {
     this.applyTheme();
     this.setState({ slug: new URLSearchParams(location.search).get('p') });
+    fetch('data/projects.json', { cache: 'no-cache' })
+      .then(r => r.json())
+      .then(d => this.setState({ projects: (d && d.projects) || [] }))
+      .catch(e => console.error('Could not load data/projects.json', e));
     const els = Array.from(document.querySelectorAll('[data-reveal]'));
     els.forEach(el => {
       el.style.opacity = '0';
@@ -323,14 +289,15 @@ class Component extends DCLogic {
   componentWillUnmount() { if (this._io) this._io.disconnect(); }
   renderVals() {
     const p = this.current();
-    const i = PROJECTS.indexOf(p);
-    const next = PROJECTS[(i + 1) % PROJECTS.length];
+    const list = this.state.projects;
+    const i = list.indexOf(p);
+    const next = list.length ? list[(i + 1) % list.length] : EMPTY;
     return {
       toggleTheme: this.toggleTheme,
       themeIcon: React.createElement('span', { dangerouslySetInnerHTML: { __html: this.isDark() ? LEAF_SVG : MOON_SVG }, style: { display: 'flex' } }),
       p: Object.assign({}, p, {
         slotHero: p.slug + '-hero', slotA: p.slug + '-a', slotB: p.slug + '-b', slotC: p.slug + '-c',
-        srcHero: 'demo/' + p.slug + '-hero.png', srcA: 'demo/' + p.slug + '-a.png', srcB: 'demo/' + p.slug + '-b.png', srcC: 'demo/' + p.slug + '-c.png'
+        srcHero: p.hero || '', srcA: p.imageA || '', srcB: p.imageB || '', srcC: p.imageC || ''
       }),
       meta: [
         { label: 'Client', value: p.client },
@@ -338,7 +305,7 @@ class Component extends DCLogic {
         { label: 'Scope', value: p.scope },
         { label: 'Our role', value: p.role }
       ],
-      results: p.results,
+      results: p.results || [],
       nextName: next.name,
       nextHref: 'project.html?p=' + next.slug
     };

@@ -184,7 +184,7 @@
     <sc-for list="{{ projects }}" as="p" hint-placeholder-count="8">
       <a data-reveal="" href="project.html?p={{ p.slug }}" style="display:flex;flex-direction:column;gap:16px">
         <div style="background:#f2f2f0;overflow:hidden;position:relative">
-          <image-slot id="{{ p.slot }}" shape="rect" src="demo/{{ p.slug }}.png" placeholder="{{ p.placeholder }}"></image-slot>
+          <image-slot id="{{ p.slot }}" shape="rect" src="{{ p.thumb }}" placeholder="{{ p.placeholder }}"></image-slot>
           {{ p.videoEl }}
         </div>
         <div style="display:flex;align-items:baseline;gap:14px;padding-right:8px">
@@ -282,7 +282,7 @@ const VIDEOS = {
 };
 
 class Component extends DCLogic {
-  state = { wi: 0, active: 0, dark: null, videoFail: {} };
+  state = { wi: 0, active: 0, dark: null, videoFail: {}, projects: [] };
   isDark() {
     if (this.state.dark != null) return this.state.dark;
     try { const v = localStorage.getItem('jungle-dark'); if (v != null) return v === '1'; } catch (e) {}
@@ -303,6 +303,10 @@ class Component extends DCLogic {
   componentDidUpdate() { this.applyTheme(); }
   componentDidMount() {
     this.applyTheme();
+    fetch('data/projects.json', { cache: 'no-cache' })
+      .then(r => r.json())
+      .then(d => this.setState({ projects: (d && d.projects) || [] }))
+      .catch(e => console.error('Could not load data/projects.json', e));
     const words = ['meaningful', 'untamed', 'lasting', 'fearless'];
     this._t = setInterval(() => this.setState(s => ({ wi: (s.wi + 1) % words.length })), 2600);
     const els = Array.from(document.querySelectorAll('[data-reveal]'));
@@ -338,21 +342,13 @@ class Component extends DCLogic {
       toggleTheme: this.toggleTheme,
       themeIcon: React.createElement('span', {dangerouslySetInnerHTML:{__html: this.isDark() ? SUN_SVG : MOON_SVG}, style:{display:'flex'}}),
       showClients: this.props.showClients ?? true,
-      projects: [
-        {slot:'w1', no:'01', slug:'p-01', name:'Project 01', tags:'Rebrand · Packaging', placeholder:'Drop project image'},
-        {slot:'w2', no:'02', slug:'p-02', name:'Project 02', tags:'Identity · Web', placeholder:'Drop project image'},
-        {slot:'w3', no:'03', slug:'p-03', name:'Project 03', tags:'Packaging · Label', placeholder:'Drop project image'},
-        {slot:'w4', no:'04', slug:'p-04', name:'Project 04', tags:'Strategy · Identity', placeholder:'Drop project image'},
-        {slot:'w5', no:'05', slug:'p-05', name:'Project 05', tags:'Logotype · Print', placeholder:'Drop project image'},
-        {slot:'w6', no:'06', slug:'p-06', name:'Project 06', tags:'Podcast · Motion', placeholder:'Drop project image'},
-        {slot:'w7', no:'07', slug:'p-07', name:'Project 07', tags:'Campaign · Social', placeholder:'Drop project image'},
-        {slot:'w8', no:'08', slug:'p-08', name:'Project 08', tags:'Selected logotypes', placeholder:'Drop project image'}
-      ].map(p => {
+      projects: this.state.projects.map((p, i) => Object.assign({ slot: 'w' + (i + 1) }, p))
+        .map(p => {
         const video = VIDEOS[p.slot];
         const ok = !!video && !this.state.videoFail[p.slot];
         return Object.assign({}, p, {
           videoEl: ok ? React.createElement('video', {
-            src: video, poster: 'demo/' + p.slug + '.png',
+            src: video, poster: p.thumb || '',
             autoPlay: true, muted: true, loop: true, playsInline: true,
             onError: () => this.setState(s => ({ videoFail: Object.assign({}, s.videoFail, { [p.slot]: true }) })),
             style: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }
