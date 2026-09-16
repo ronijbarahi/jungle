@@ -218,11 +218,11 @@ class Component extends DCLogic {
     const on = "padding: 11px 17px; background: #f5f4f1; border: 1px solid #f5f4f1; border-radius: 999px; color: #0b0b0b; font-size: 13px; white-space: nowrap; cursor: pointer; transition: background 0.25s ease;";
     return {
       backLabel: this.props.backOnline ?? "Early October",
-      reelSrc: this.props.reelSrc ?? "uploads/reel-demo.mp4",
-      reelPoster: this.props.reelPoster ?? "uploads/reel-poster.jpg",
+      reelSrc: this.props.reelSrc || "uploads/reel-demo.mp4",
+      reelPoster: this.props.reelPoster || "uploads/reel-poster.jpg",
       reelYear: this.props.reelYear ?? "2026",
-      hasReel: !!(this.props.reelSrc || "").trim(),
-      noReel: !(this.props.reelSrc || "").trim(),
+      hasReel: !!(this.props.reelSrc || "uploads/reel-demo.mp4").trim(),
+      noReel: !(this.props.reelSrc || "uploads/reel-demo.mp4").trim(),
       videoRef: this.video,
       reelBtnLabel: s.playing ? "Pause" : "Play",
       soundBtnLabel: s.muted ? "Sound on" : "Sound off",
