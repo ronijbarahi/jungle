@@ -1,401 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jungle. — Brand & Digital Design Studio in Kathmandu</title>
-<meta name="description" content="Jungle. is an independent brand and digital design studio in Lalitpur, Kathmandu. Identity, packaging, websites and art direction for Nepali businesses.">
-<link rel="canonical" href="https://designbyjungle.com/">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#0a0a0a">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Jungle.">
-<meta property="og:locale" content="en_NP">
-<meta property="og:title" content="Jungle. — Brand & Digital Design Studio in Kathmandu">
-<meta property="og:description" content="Jungle. is an independent brand and digital design studio in Lalitpur, Kathmandu. Identity, packaging, websites and art direction for Nepali businesses.">
-<meta property="og:url" content="https://designbyjungle.com/">
-<meta property="og:image" content="https://designbyjungle.com/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Jungle. — Brand & Digital Design Studio in Kathmandu">
-<meta name="twitter:description" content="Jungle. is an independent brand and digital design studio in Lalitpur, Kathmandu. Identity, packaging, websites and art direction for Nepali businesses.">
-<meta name="twitter:image" content="https://designbyjungle.com/og-image.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Jungle.","alternateName":"Jungle Designs","url":"https://designbyjungle.com/","logo":"https://designbyjungle.com/icon-512.png","image":"https://designbyjungle.com/og-image.png","description":"Independent brand and digital design studio in Lalitpur, Kathmandu, Nepal.","email":"ronij.jungle@gmail.com","telephone":"+977-9808132072","address":{"@type":"PostalAddress","addressLocality":"Lalitpur","addressRegion":"Bagmati Province","addressCountry":"NP"},"areaServed":"NP","sameAs":["https://www.instagram.com/jungledesigns"],"knowsAbout":["Brand identity","Packaging design","Web design","Art direction"]}</script>
 <script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-<script src="./image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <style>
-  html,body{margin:0;padding:0;background:#fff;color:#0a0a0a;font-family:'Archivo',sans-serif;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}
-  a:hover{opacity:.55}
-  ::selection{background:#0a0a0a;color:#fff}
-  @keyframes jg-fade{from{opacity:0;transform:translateY(.45em)}to{opacity:1;transform:none}}
-  html{scroll-behavior:smooth}
-  @keyframes jg-up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-  @keyframes jg-in{from{opacity:0}to{opacity:1}}
-  header{animation:jg-in .8s ease both}
-  header nav a{position:relative}
-  header nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)}
-  header nav a:hover::after{transform:scaleX(1)}
-  header nav a:hover{opacity:1}
-  header button{transition:transform .5s cubic-bezier(.16,1,.3,1),background .3s ease,color .3s ease}
-  header button:hover{transform:rotate(-18deg) scale(1.06)}
-  header>div>div span{transition:transform .35s cubic-bezier(.16,1,.3,1),width .35s ease}
-  header>div>div:hover span:nth-child(2){width:20px!important}
-  footer>a{display:inline-block;transition:transform .7s cubic-bezier(.16,1,.3,1),opacity .4s ease}
-  footer>a:hover{transform:translateX(-14px);opacity:1}
-  footer a,section a{transition:opacity .3s ease}
-  #top>div>div,#top h1{animation:jg-up 1s cubic-bezier(.16,1,.3,1) both}
-  #top h1{animation-delay:.12s}
-  #top>div:last-of-type{animation:jg-in 1.2s ease .4s both}
-  #work>div>*>div:first-child{transition:transform .9s cubic-bezier(.16,1,.3,1)}
-  #work>div>*:hover>div:first-child{transform:scale(1.03)}
-  #work>div>*>div:last-child{transition:transform .6s cubic-bezier(.16,1,.3,1)}
-  #work>div>*:hover>div:last-child{transform:translateX(8px)}
-  #services>div>div{transition:background .6s ease}
-  #services>div>div:hover{background:rgba(255,255,255,.03)}
-  #work>div>*:nth-child(4n+1),#work>div>*:nth-child(4n){grid-column:span 4}
-  #work>div>*:nth-child(4n+2),#work>div>*:nth-child(4n+3){grid-column:span 2}
-  #work>div>*:nth-child(4n+1)>div:first-child,#work>div>*:nth-child(4n)>div:first-child{aspect-ratio:16/10}
-  #work>div>*:nth-child(4n+2)>div:first-child,#work>div>*:nth-child(4n+3)>div:first-child{aspect-ratio:3/4}
-  #space>div>div{transition:transform 1s cubic-bezier(.16,1,.3,1)}
-  #space>div>div:hover{transform:translateY(-6px)}
-
-  html[data-theme="dark"],html[data-theme="dark"] body{background:#0a0a0a!important;color:#fff!important}
-  html[data-theme="dark"] header{background:rgba(10,10,10,.94)!important}
-  html[data-theme="dark"] header img,html[data-theme="dark"] footer img{filter:invert(1)}
-  html[data-theme="dark"] header span[style*="background:#0a0a0a"]{background:#fff!important}
-  html[data-theme="dark"] header button{color:#fff!important;border-color:#fff!important}
-  html[data-theme="dark"] section,html[data-theme="dark"] footer{background:#0a0a0a!important;color:#fff!important;border-color:#2a2a2a!important}
-  html[data-theme="dark"] section[id="services"]{background:#141414!important}
-  html[data-theme="dark"] div[style*="background:#f2f2f0"]{background:#1c1c1c!important}
-  html[data-theme="dark"] span[style*="background:#0a0a0a"]{background:#fff!important}
-  html[data-theme="dark"] a[style*="border-bottom:2px solid #0a0a0a"]{border-color:#fff!important}
-  html[data-theme="dark"] [style*="color:#0a0a0a"]{color:#fff!important}
-  html[data-theme="dark"] [style*="color:#555"],html[data-theme="dark"] [style*="color:#444"],html[data-theme="dark"] [style*="color:#333"],html[data-theme="dark"] [style*="color:#666"]{color:#a8a8a8!important}
-  html[data-theme="dark"] [style*="color:#ccc"],html[data-theme="dark"] [style*="color:#bbb"]{color:#4a4a4a!important}
-  html[data-theme="dark"] [style*="color:#5a5a5a"],html[data-theme="dark"] [style*="color:#8a8a8a"],html[data-theme="dark"] [style*="color:#9a9a9a"]{color:#8f8f8f!important}
-  html[data-theme="dark"] [style*="color:#b4b4b4"],html[data-theme="dark"] [style*="color:#c4c4c4"]{color:#5c5c5c!important}
-  html[data-theme="dark"] div[style*="background:#f2f2f0"]{background:#181818!important}
-
-  @media (max-width:820px){
-    header{padding:16px 20px!important;gap:12px!important}
-    header>div{gap:14px!important}
-    header nav{gap:18px!important;font-size:15px!important}
-    header img{height:26px!important}
-    header button{padding:6px 10px!important;font-size:11px!important}
-    #top{padding:8px 20px 40px!important}
-    #top>div:first-of-type{gap:40px!important;padding:8px 0 40px!important;font-size:17px!important}
-    #top>div{grid-template-columns:1fr!important;gap:16px!important}
-    #top h1{font-size:44px!important;text-align:left!important}
-    #top>div:last-of-type{margin-top:48px!important}
-    #top span[style*="padding-left"]{padding-left:0!important}
-    #top>div:last-of-type>div{justify-content:flex-start!important}
-    #work{padding:0 20px 48px!important}
-    #work>div{grid-template-columns:1fr!important;gap:32px!important}
-    #work>div>*{grid-column:auto!important}
-    #work>div>*>div:first-child{aspect-ratio:4/3!important}
-    #space{padding:56px 20px 64px!important}
-    #space>div:first-child{grid-template-columns:1fr!important;gap:20px!important}
-    #space>div:first-child p{font-size:17px!important}
-    #space>div[style*="56vh"]{height:38vh!important;min-height:240px!important}
-    #space>div:last-child{grid-template-columns:1fr!important}
-    #about{padding:56px 20px!important}
-    #about p{font-size:24px!important}
-    #about>div{flex-wrap:wrap!important;gap:20px!important}
-    #services{padding:56px 20px 40px!important}
-    #services h2{margin-bottom:40px!important;font-size:26px!important}
-    #services>div{flex-direction:column!important}
-    #services>div>div{flex:none!important;min-height:0!important;padding:24px 0!important;border-left:none!important;border-top:1px solid #3a3a3a!important}
-    #services>div>div:first-child{border-top:none!important}
-    #services ul{opacity:1!important;transform:none!important;min-width:0!important}
-    #services ul li{opacity:1!important;transform:none!important}
-    #services h3{color:#fff!important}
-    #services span{opacity:1!important;font-size:64px!important;margin-top:24px!important}
-    #contact{padding:64px 20px 40px!important}
-    #contact>a{text-align:left!important;font-size:52px!important}
-    #contact>div{grid-template-columns:1fr!important;gap:36px!important;margin-top:64px!important}
-    #contact p[style*="padding-left"],#contact div[style*="padding-left"]{padding-left:0!important}
-    #contact p[style*="margin:120px"]{margin-top:32px!important}
-    section{padding-left:20px!important;padding-right:20px!important}
-  }
-
-  #jg-load{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:#fff;animation:jg-load-out .75s cubic-bezier(.7,0,.2,1) 1.15s forwards}
-  #jg-load img{width:72px;display:block;animation:jg-load-mark 1.05s cubic-bezier(.16,1,.3,1) both}
-  #jg-load span{display:block;height:1px;width:120px;background:#0a0a0a;transform-origin:left;animation:jg-load-rule 1.15s cubic-bezier(.5,0,.2,1) both}
-  @keyframes jg-load-mark{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
-  @keyframes jg-load-rule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-  @keyframes jg-load-out{to{transform:translateY(-101%)}}
-  html[data-theme="dark"] #jg-load{background:#0a0a0a!important}
-  html[data-theme="dark"] #jg-load img{filter:invert(1)}
-  html[data-theme="dark"] #jg-load span{background:#fff}
-  @media (prefers-reduced-motion:reduce){#jg-load{display:none}}
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #0b0b0b; }
+  body { font-family: Archivo, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #f5f4f1; text-decoration: none; }
+  a:hover { color: #a5a29c; }
+  input, textarea, select, button { font-family: inherit; }
+  input::placeholder, textarea::placeholder { color: #6e6b66; }
+  @keyframes jgl-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes jgl-drift-a { 0% { transform: translate3d(-6%, -4%, 0) scale(1); } 50% { transform: translate3d(8%, 6%, 0) scale(1.18); } 100% { transform: translate3d(-6%, -4%, 0) scale(1); } }
+  @keyframes jgl-drift-b { 0% { transform: translate3d(6%, 8%, 0) scale(1.1); } 50% { transform: translate3d(-8%, -6%, 0) scale(0.92); } 100% { transform: translate3d(6%, 8%, 0) scale(1.1); } }
+  @keyframes jgl-sweep { 0% { transform: translateX(-40%) rotate(8deg); opacity: 0; } 35% { opacity: 0.5; } 100% { transform: translateX(140%) rotate(8deg); opacity: 0; } }
+  @keyframes jgl-pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
 </style>
 </helmet>
+<div style="min-height: 100vh; background: #0b0b0b; color: #f5f4f1; display: flex; flex-direction: column; position: relative; overflow: hidden; isolation: isolate;">
+  <div style="position: absolute; inset: -20%; z-index: -1; pointer-events: none; background: radial-gradient(closest-side, rgba(245,244,241,0.14), rgba(245,244,241,0) 70%); animation: jgl-drift-a 34s ease-in-out infinite;"></div>
+  <div style="position: absolute; inset: -10% -25% -30% 20%; z-index: -1; pointer-events: none; background: radial-gradient(closest-side, rgba(245,244,241,0.09), rgba(245,244,241,0) 72%); animation: jgl-drift-b 46s ease-in-out infinite;"></div>
+  <div style="position: absolute; top: -30%; bottom: -30%; left: 0; width: 26vw; z-index: -1; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.055), transparent); animation: jgl-sweep 22s linear infinite;"></div>
+  <div style="position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0.5; background-image: linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px); background-size: 14.28% 100%;"></div>
 
-<div id="jg-load" aria-hidden="true">
-  <img src="assets/j-black.svg" alt="">
-  <span></span>
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding: clamp(24px, 3.5vw, 40px) clamp(22px, 6vw, 88px);">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <img src="assets/jungle-wordmark-white.svg" alt="Jungle." style="height: 22px; width: auto; display: block;" />
+      <span style="width: 1px; height: 18px; background: #34322f;"></span>
+      <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #a5a29c;">Creative studio</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #a5a29c;">
+      <span style="width: 6px; height: 6px; border-radius: 50%; background: #f5f4f1; animation: jgl-pulse 2.8s ease-in-out infinite;"></span>
+      Site under maintenance
+    </div>
+  </header>
+
+  <main style="flex: 1; display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: clamp(40px, 6vw, 96px); align-items: center; padding: clamp(36px, 7vw, 96px) clamp(22px, 6vw, 88px);">
+
+    <section style="min-width: 0; animation: jgl-rise 0.8s ease-out both;">
+      <div style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #a5a29c;">Back soon</div>
+      <h1 style="margin: 26px 0 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(46px, 7.4vw, 104px); line-height: 0.98; letter-spacing: -0.02em; text-wrap: balance;">
+        We're off-air,<br />rebuilding <em style="font-style: italic;">quietly</em>.
+      </h1>
+      <p style="margin: 28px 0 0; max-width: 44ch; font-size: clamp(16px, 1.4vw, 19px); line-height: 1.62; color: #c8c5bf; text-wrap: pretty;">
+        Our site is down for a short while as we rework it from the ground up. The studio is open, the calendar is filling, and new work starts every month.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 28px; margin-top: clamp(44px, 6vw, 72px); padding-top: 26px; border-top: 1px solid #262421;">
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c;">Back online</div>
+          <div style="margin-top: 10px; font-family: 'Instrument Serif', Georgia, serif; font-size: 25px; letter-spacing: -0.01em;">{{ backLabel }}</div>
+        </div>
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c;">Studio</div>
+          <div style="margin-top: 10px; font-family: 'Instrument Serif', Georgia, serif; font-size: 25px; letter-spacing: -0.01em;">Open for 2026</div>
+        </div>
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c;">Direct</div>
+          <div style="margin-top: 10px; font-family: 'Instrument Serif', Georgia, serif; font-size: 25px; letter-spacing: -0.01em;"><a href="mailto:ronij.jungle@gmail.com">ronij.jungle@gmail.com</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="brief" style="min-width: 0; animation: jgl-rise 0.9s 0.12s ease-out both;">
+      <div style="background: #111110; border: 1px solid #262421; padding: clamp(26px, 3.4vw, 44px);">
+
+        <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.2vw, 40px); line-height: 1.08; letter-spacing: -0.015em;">Have a project in mind?</h2>
+            <p style="margin: 14px 0 34px; font-size: 15px; line-height: 1.6; color: #a5a29c; max-width: 40ch;">Leave us a note. We read everything ourselves and reply within two working days.</p>
+
+            <div style="display: grid; gap: 26px;">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 26px;">
+                <label style="display: block;">
+                  <span style="display: block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c; margin-bottom: 10px;">Name</span>
+                  <input type="text" value="{{ fName }}" onChange="{{ onName }}" placeholder="Your name" style="width: 100%; padding: 10px 0; background: transparent; border: 0; border-bottom: 1px solid #3a3733; color: #f5f4f1; font-size: 16px; outline: none;" style-focus="border-bottom-color: #f5f4f1;" />
+                </label>
+                <label style="display: block;">
+                  <span style="display: block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c; margin-bottom: 10px;">Email</span>
+                  <input type="email" value="{{ fEmail }}" onChange="{{ onEmail }}" placeholder="you@company.com" style="width: 100%; padding: 10px 0; background: transparent; border: 0; border-bottom: 1px solid #3a3733; color: #f5f4f1; font-size: 16px; outline: none;" style-focus="border-bottom-color: #f5f4f1;" />
+                </label>
+              </div>
+
+              <div>
+                <span style="display: block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c; margin-bottom: 14px;">What can we help with?</span>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                  <sc-for list="{{ services }}" as="s" hint-placeholder-count="5">
+                    <button type="button" onClick="{{ s.toggle }}" style="{{ s.style }}">{{ s.label }}</button>
+                  </sc-for>
+                </div>
+              </div>
+
+              <label style="display: block;">
+                <span style="display: block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c; margin-bottom: 10px;">A little context</span>
+                <textarea value="{{ fBrief }}" onChange="{{ onBrief }}" rows="3" placeholder="What are you making, and when does it need to land?" style="width: 100%; padding: 10px 0; background: transparent; border: 0; border-bottom: 1px solid #3a3733; color: #f5f4f1; font-size: 16px; line-height: 1.6; outline: none; resize: vertical;" style-focus="border-bottom-color: #f5f4f1;"></textarea>
+              </label>
+
+              <sc-if value="{{ error }}" hint-placeholder-val="{{ false }}">
+                <div style="font-size: 13px; line-height: 1.5; color: #f5f4f1; border-left: 1px solid #6e6b66; padding-left: 12px;">{{ error }}</div>
+              </sc-if>
+
+              <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                <button type="button" onClick="{{ submit }}" style="padding: 15px 32px; background: #f5f4f1; color: #0b0b0b; border: 1px solid #f5f4f1; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: background 0.25s ease, color 0.25s ease;" style-hover="background: transparent; color: #f5f4f1;">Send enquiry</button>
+                <span style="font-size: 13px; color: #a5a29c;">Or write to <a href="mailto:ronij.jungle@gmail.com">ronij.jungle@gmail.com</a></span>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+          <div style="padding: 20px 0;">
+            <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #a5a29c;">Enquiry received</div>
+            <h2 style="margin: 20px 0 14px; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 44px); line-height: 1.05; letter-spacing: -0.015em;">Thank you{{ sentName }}.</h2>
+            <p style="margin: 0 0 30px; font-size: 16px; line-height: 1.62; color: #c8c5bf; max-width: 38ch;">Your note is with us. We'll come back within two working days with thoughts and next steps.</p>
+            <div style="display: grid; gap: 12px; padding-top: 22px; border-top: 1px solid #262421; font-size: 14px; color: #a5a29c;">
+              <div>Reference · <span style="color: #f5f4f1;">{{ refCode }}</span></div>
+              <div>Scope · <span style="color: #f5f4f1;">{{ sentScope }}</span></div>
+            </div>
+            <button type="button" onClick="{{ reset }}" style="margin-top: 30px; padding: 13px 26px; background: transparent; color: #f5f4f1; border: 1px solid #3a3733; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: border-color 0.25s ease;" style-hover="border-color: #f5f4f1;">Send another</button>
+          </div>
+        </sc-if>
+      </div>
+    </section>
+  </main>
+
+  <section style="padding: 0 clamp(22px, 6vw, 88px) clamp(46px, 6vw, 84px);">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid #262421;">
+      <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(26px, 2.8vw, 36px); letter-spacing: -0.015em;">Selected work, on loop</h2>
+      <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #a5a29c;">Showreel · {{ reelYear }}</span>
+    </div>
+
+    <div style="position: relative; margin-top: 22px; aspect-ratio: 16 / 9; width: 100%; background: #111110; border: 1px solid #262421; overflow: hidden;">
+      <sc-if value="{{ hasReel }}" hint-placeholder-val="{{ false }}">
+        <video src="{{ reelSrc }}" poster="{{ reelPoster }}" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" ref="{{ videoRef }}" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+      </sc-if>
+
+      <sc-if value="{{ noReel }}" hint-placeholder-val="{{ true }}">
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; padding: 24px;">
+          <div style="width: 54px; height: 54px; border: 1px solid #3a3733; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <div style="width: 0; height: 0; border-left: 11px solid #f5f4f1; border-top: 7px solid transparent; border-bottom: 7px solid transparent; margin-left: 3px;"></div>
+          </div>
+          <div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 22px;">Reel goes here</div>
+          <div style="font-size: 13px; line-height: 1.6; color: #a5a29c; max-width: 34ch;">Add your showreel file or a hosted MP4 link and it will autoplay, muted, on loop.</div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ hasReel }}" hint-placeholder-val="{{ false }}">
+        <button type="button" onClick="{{ toggleReel }}" style="position: absolute; left: 18px; bottom: 18px; padding: 11px 20px; background: rgba(11,11,11,0.55); backdrop-filter: blur(6px); color: #f5f4f1; border: 1px solid rgba(245,244,241,0.35); border-radius: 999px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: border-color 0.25s ease;" style-hover="border-color: #f5f4f1;">{{ reelBtnLabel }}</button>
+        <button type="button" onClick="{{ toggleSound }}" style="position: absolute; right: 18px; bottom: 18px; padding: 11px 20px; background: rgba(11,11,11,0.55); backdrop-filter: blur(6px); color: #f5f4f1; border: 1px solid rgba(245,244,241,0.35); border-radius: 999px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: border-color 0.25s ease;" style-hover="border-color: #f5f4f1;">{{ soundBtnLabel }}</button>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: clamp(22px, 3vw, 34px) clamp(22px, 6vw, 88px); border-top: 1px solid #1d1b19; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #a5a29c;">
+    <div>Jungle. — Kathmandu, Nepal</div>
+    <div style="display: flex; gap: 26px; flex-wrap: wrap;">
+      <a href="mailto:ronij.jungle@gmail.com">Email</a>
+      <a href="tel:+9779800000000">Call</a>
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+  </footer>
 </div>
 
-<header style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:26px 44px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px)">
-  <a href="#top" style="display:flex;align-items:center"><img src="assets/logo-black.svg" alt="Jungle." style="height:36px;display:block"></a>
-  <div style="display:flex;align-items:center;gap:44px">
-    <nav style="display:flex;gap:40px;font-size:19px;font-weight:500">
-      <a href="#work" style="color:#9a9a9a">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button onClick="{{ toggleTheme }}" aria-label="Toggle theme" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;font-family:inherit;color:#0a0a0a;background:none;border:1px solid #0a0a0a;border-radius:999px;cursor:pointer;padding:0">{{ themeIcon }}</button>
-    <div style="display:flex;flex-direction:column;gap:6px;cursor:pointer;padding:4px 0">
-      <span style="display:block;width:30px;height:2.5px;background:#0a0a0a"></span>
-      <span style="display:block;width:30px;height:2.5px;background:#0a0a0a"></span>
-      <span style="display:block;width:30px;height:2.5px;background:#0a0a0a"></span>
-    </div>
-  </div>
-</header>
-
-<section id="top" style="padding:24px 44px 60px">
-  <div style="display:grid;grid-template-columns:260px 1fr;align-items:center;gap:40px;padding-top:60px">
-    <div style="display:flex;align-items:flex-start;gap:16px;white-space:nowrap">
-      <span style="font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#9a9a9a;writing-mode:vertical-rl;transform:rotate(180deg)">2019 &mdash; 26</span>
-      <div style="display:flex;flex-direction:column;gap:6px">
-        <span style="font-size:34px;font-weight:500;letter-spacing:-0.03em;line-height:1">Selected</span>
-        <span style="font-size:34px;font-weight:500;letter-spacing:-0.03em;line-height:1;color:#c4c4c4">work<span style="font-size:13px;vertical-align:super;color:#9a9a9a">08</span></span>
-      </div>
-    </div>
-    <h1 style="margin: 0; font-size: clamp(48px,6.4vw,110px); font-weight: 500; letter-spacing: -0.04em; line-height: 1.05; text-align: left; text-wrap: balance">We design<br>{{ heroWord }} brands.</h1>
-  </div>
-
-</section>
-
-<section id="work" style="padding:0 16px 96px">
-  
-<div style="display:grid;grid-template-columns:repeat(6,1fr);align-items:start;gap:72px 16px">
-    <sc-for list="{{ projects }}" as="p" hint-placeholder-count="8">
-      <a data-reveal="" href="project.html?p={{ p.slug }}" style="display:flex;flex-direction:column;gap:16px">
-        <div style="background:#f2f2f0;overflow:hidden;position:relative">
-          <image-slot id="{{ p.slot }}" shape="rect" src="{{ p.thumb }}" placeholder="{{ p.placeholder }}"></image-slot>
-          {{ p.videoEl }}
-        </div>
-        <div style="display:flex;align-items:baseline;gap:14px;padding-right:8px">
-          <span style="font-size:12px;font-weight:500;color:#b4b4b4;letter-spacing:.06em">{{ p.no }}</span>
-          <div style="display:flex;flex-direction:column;gap:3px;min-width:0">
-            <span style="font-size:19px;font-weight:500;letter-spacing:-0.01em">{{ p.name }}</span>
-            <span style="font-size:12px;font-weight:500;color:#8a8a8a;text-transform:uppercase;letter-spacing:.09em">{{ p.tags }}</span>
-          </div>
-        </div>
-      </a>
-    </sc-for>
-  </div></section>
-
-<section id="space" style="padding:96px 44px 104px">
-  <div style="display:grid;grid-template-columns:260px 1fr;align-items:end;gap:40px;margin-bottom:48px">
-    <div style="display:flex;align-items:flex-start;gap:16px;white-space:nowrap">
-      <span style="font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#9a9a9a;writing-mode:vertical-rl;transform:rotate(180deg)">Lalitpur</span>
-      <div style="display:flex;flex-direction:column;gap:6px">
-        <span style="font-size:34px;font-weight:500;letter-spacing:-0.03em;line-height:1">The</span>
-        <span style="font-size:34px;font-weight:500;letter-spacing:-0.03em;line-height:1;color:#c4c4c4">space</span>
-      </div>
-    </div>
-    <p style="margin:0;max-width:560px;font-size:19px;font-weight:400;line-height:1.55;color:#5a5a5a">A room full of paper, prints and half-finished ideas. Most of what we make starts on the wall before it ever reaches a screen.</p>
-  </div>
-  <div data-reveal="" style="height:56vh;min-height:380px;background:#f2f2f0;overflow:hidden;margin-bottom:16px">
-    <image-slot id="space-hero" shape="rect" src="demo/space-hero.png" placeholder="Drop a wide studio photo"></image-slot>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-    <div data-reveal="" style="aspect-ratio:4/5;background:#f2f2f0;overflow:hidden"><image-slot id="space-a" shape="rect" src="demo/space-a.png" placeholder="Desk / detail"></image-slot></div>
-    <div data-reveal="" style="aspect-ratio:4/5;background:#f2f2f0;overflow:hidden"><image-slot id="space-b" shape="rect" src="demo/space-b.png" placeholder="Team at work"></image-slot></div>
-    <div data-reveal="" style="aspect-ratio:4/5;background:#f2f2f0;overflow:hidden"><image-slot id="space-c" shape="rect" src="demo/space-c.png" placeholder="Print / material"></image-slot></div>
-  </div>
-</section>
-
-<section id="about" style="padding:96px 44px;border-bottom:1px solid #e6e6e2">
-  <p data-reveal="" style="margin:0;max-width:1100px;font-size:clamp(26px,3.4vw,44px);font-weight:500;line-height:1.25;letter-spacing:-0.02em;text-wrap:pretty">Jungle is an ecosystem of design and strategy. We help businesses bring clarity to their ideas and turn them into brands with purpose, character, and lasting value.</p>
-  <div style="display:flex;gap:36px;margin-top:44px;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:.08em">
-    <a href="#services" style="border-bottom:2px solid #0a0a0a;padding-bottom:4px">Our approach</a>
-    <a href="#services" style="border-bottom:2px solid #0a0a0a;padding-bottom:4px">What we do</a>
-  </div>
-</section>
-
-<section id="services" style="padding:80px 44px 64px;background:#111;color:#fff">
-  <h2 style="margin:0 0 72px;font-size:clamp(30px,3.4vw,44px);font-weight:500;letter-spacing:-0.01em;max-width:620px;line-height:1.2">Explore our branding and design services</h2>
-  <div style="display:flex;align-items:stretch">
-    <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
-      <div data-reveal="" onMouseEnter="{{ s.onEnter }}" style="{{ s.colStyle }}">
-        <h3 style="{{ s.titleStyle }}">{{ s.title }}</h3>
-        <ul style="{{ s.listStyle }}">
-          <sc-for list="{{ s.items }}" as="it" hint-placeholder-count="3">
-            <li style="{{ it.style }}">{{ it.text }}</li>
-          </sc-for>
-        </ul>
-        <span style="{{ s.letterStyle }}">{{ s.letter }}</span>
-      </div>
-    </sc-for>
-  </div>
-</section>
-
-<sc-if value="{{ showClients }}" hint-placeholder-val="{{ true }}">
-
-</sc-if>
-
-<footer id="contact" style="padding:100px 44px 60px;background:#fff;color:#0a0a0a">
-  <a data-reveal="" href="mailto:ronij.jungle@gmail.com" style="display:block;text-align:right;font-size:clamp(64px,10vw,170px);font-weight:500;letter-spacing:-0.03em;line-height:1">Let’s talk</a>
-  <div style="display:grid;grid-template-columns:220px 1fr 1fr 1fr;gap:48px;margin-top:200px;font-size:17px;line-height:1.6">
-    <div><img src="assets/j-black.svg" alt="Jungle." style="height:64px;display:block"></div>
-    <div>
-      <h3 style="margin:0 0 28px;font-size:19px;font-weight:500">Office</h3>
-      <p style="margin:0;padding-left:52px">Jhamsikhel, Lalitpur,<br>Kathmandu Valley, Nepal</p>
-      <p style="margin:120px 0 0;font-size:15px">© 2019 - 2026 Jungle Agency</p>
-    </div>
-    <div>
-      <h3 style="margin:0 0 28px;font-size:19px;font-weight:500">Contact</h3>
-      <div style="display:flex;flex-direction:column;gap:2px;padding-left:52px">
-        <a href="tel:+97715520000">+977 1 552 0000</a>
-        <a href="mailto:ronij.jungle@gmail.com">ronij.jungle@gmail.com</a>
-      </div>
-    </div>
-    <div>
-      <h3 style="margin:0 0 28px;font-size:19px;font-weight:500">Follow</h3>
-      <div style="display:flex;flex-direction:column;gap:2px;padding-left:52px">
-        <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Behance</a><a href="#">LinkedIn</a>
-      </div>
-    </div>
-  </div>
-</footer>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;darkMode&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Theme&quot;},&quot;showClients&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
-const SUN_SVG = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5C3 14 6 5.5 19.5 4.5c1 12-7 15.5-12.5 14"></path><path d="M4.5 19.5C8 16 11.5 12 16 9.5"></path></svg>`;
-const MOON_SVG = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 14.6A8.6 8.6 0 0 1 9.4 3.8a8.6 8.6 0 1 0 10.8 10.8z"></path><path d="M13.4 10.6c1.6-.4 3.1.1 4.1 1.2"></path></svg>`;
-// Drop a file at any of these paths and that tile plays video instead of an image.
-const VIDEOS = {
-  w1: '', w2: '', w3: '', w4: '', w5: '', w6: '', w7: '', w8: ''
-};
+<script type="text/x-dc" data-dc-script data-props="{&quot;backOnline&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Early October&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;reelSrc&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Showreel&quot;},&quot;reelPoster&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Showreel&quot;},&quot;reelYear&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;2026&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Showreel&quot;},&quot;services&quot;:{&quot;editor&quot;:null,&quot;default&quot;:null,&quot;tsType&quot;:&quot;string[]&quot;,&quot;section&quot;:&quot;Form&quot;}}">
+const SERVICES = ["Brand identity", "Web design", "Content & social", "Something else"];
 
 class Component extends DCLogic {
-  state = { wi: 0, active: 0, dark: null, videoFail: {}, projects: [] };
-  isDark() {
-    if (this.state.dark != null) return this.state.dark;
-    try { const v = localStorage.getItem('jungle-dark'); if (v != null) return v === '1'; } catch (e) {}
-    return this.props.darkMode ?? false;
+  state = { name: "", email: "", brief: "", picked: [], error: "", sent: false, sentName: "", sentScope: "", refCode: "", playing: true, muted: true };
+  video = React.createRef();
+
+  toggleReel() {
+    const v = this.video.current;
+    if (!v) return;
+    if (v.paused) { v.play(); this.setState({ playing: true }); }
+    else { v.pause(); this.setState({ playing: false }); }
   }
-  toggleTheme = () => {
-    const next = !this.isDark();
-    try { localStorage.setItem('jungle-dark', next ? '1' : '0'); } catch (e) {}
-    this.setState({ dark: next });
-  };
-  applyTheme() {
-    const dark = this.isDark();
-    document.documentElement.style.filter = '';
-    document.querySelectorAll('image-slot').forEach(el => { el.style.filter = ''; });
-    if (dark) document.documentElement.setAttribute('data-theme', 'dark');
-    else document.documentElement.removeAttribute('data-theme');
+
+  toggleSound() {
+    const v = this.video.current;
+    if (!v) return;
+    v.muted = !v.muted;
+    this.setState({ muted: v.muted });
   }
-  componentDidUpdate() { this.applyTheme(); }
-  componentDidMount() {
-    this.applyTheme();
-    fetch('data/projects.json', { cache: 'no-cache' })
-      .then(r => r.json())
-      .then(d => this.setState({ projects: (d && d.projects) || [] }))
-      .catch(e => console.error('Could not load data/projects.json', e));
-    const words = ['meaningful', 'untamed', 'lasting', 'fearless'];
-    this._t = setInterval(() => this.setState(s => ({ wi: (s.wi + 1) % words.length })), 2600);
-    const els = Array.from(document.querySelectorAll('[data-reveal]'));
-    els.forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(28px)';
-      el.style.transition = 'opacity .8s cubic-bezier(.2,.6,.2,1), transform .8s cubic-bezier(.2,.6,.2,1)';
+
+  toggle(label) {
+    this.setState(s => ({ picked: s.picked.includes(label) ? s.picked.filter(x => x !== label) : s.picked.concat(label) }));
+  }
+
+  submit() {
+    const { name, email, picked, brief } = this.state;
+    if (!name.trim()) return this.setState({ error: "Could we have your name?" });
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return this.setState({ error: "That email address looks incomplete." });
+    if (brief.trim().length < 10) return this.setState({ error: "A sentence or two of context helps us reply properly." });
+    this.setState({
+      sent: true, error: "",
+      sentName: ", " + name.trim().split(" ")[0],
+      sentScope: picked.length ? picked.join(", ") : "To be defined together",
+      refCode: "JGL-" + String(Math.floor(1000 + Math.random() * 8999))
     });
-    this._io = new IntersectionObserver(entries => {
-      let i = 0;
-      entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        const el = e.target;
-        el.style.transitionDelay = (i++ * 90) + 'ms';
-        el.style.opacity = '1';
-        el.style.transform = 'none';
-        this._io.unobserve(el);
-      });
-    }, { threshold: 0.15 });
-    els.forEach(el => this._io.observe(el));
   }
-  componentWillUnmount() {
-    clearInterval(this._t);
-    if (this._io) this._io.disconnect();
-  }
+
+  reset() { this.setState({ sent: false, name: "", email: "", brief: "", picked: [], error: "" }); }
+
   renderVals() {
-    const words = ['meaningful', 'untamed', 'lasting', 'fearless'];
+    const s = this.state;
+    const off = "padding: 11px 17px; background: transparent; border: 1px solid #3a3733; border-radius: 999px; color: #c8c5bf; font-size: 13px; white-space: nowrap; cursor: pointer; transition: border-color 0.25s ease, color 0.25s ease;";
+    const on = "padding: 11px 17px; background: #f5f4f1; border: 1px solid #f5f4f1; border-radius: 999px; color: #0b0b0b; font-size: 13px; white-space: nowrap; cursor: pointer; transition: background 0.25s ease;";
     return {
-      heroWord: React.createElement('span', {
-        key: this.state.wi,
-        style: { display: 'inline-block', animation: 'jg-fade .6s cubic-bezier(.2,.6,.2,1)' }
-      }, words[this.state.wi]),
-      toggleTheme: this.toggleTheme,
-      themeIcon: React.createElement('span', {dangerouslySetInnerHTML:{__html: this.isDark() ? SUN_SVG : MOON_SVG}, style:{display:'flex'}}),
-      showClients: this.props.showClients ?? true,
-      projects: this.state.projects.map((p, i) => Object.assign({ slot: 'w' + (i + 1) }, p))
-        .map(p => {
-        const video = VIDEOS[p.slot];
-        const ok = !!video && !this.state.videoFail[p.slot];
-        return Object.assign({}, p, {
-          videoEl: ok ? React.createElement('video', {
-            src: video, poster: p.thumb || '',
-            autoPlay: true, muted: true, loop: true, playsInline: true,
-            onError: () => this.setState(s => ({ videoFail: Object.assign({}, s.videoFail, { [p.slot]: true }) })),
-            style: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }
-          }) : null
-        });
-      }),
-      services: [
-        {letter:'W', title:'Wonder', items:['Brand audit','Brand and design benchmark','Market research and consumer intelligence']},
-        {letter:'I', title:'Identity', items:['Naming and tagline','Brand identity and brand core','Brand narrative and voice']},
-        {letter:'L', title:'Launch', items:['Brand launch','Brand activation','Digital brand environments']},
-        {letter:'D', title:'Drive', items:['Brand management','Content strategy','Design retainer']}
-      ].map((s, i) => {
-        const open = this.state.active === i;
-        const ease = 'cubic-bezier(.16,1,.3,1)';
-        return Object.assign({}, s, {
-          onEnter: () => this.setState({ active: i }),
-          colStyle: {
-            display: 'flex', flexDirection: 'column', borderLeft: i === 0 ? 'none' : '1px solid #3a3a3a',
-            padding: '0 28px 8px', minHeight: '340px', minWidth: 0, overflow: 'hidden',
-            flex: open ? 2.4 : 1, cursor: 'default',
-            transition: 'flex .9s ' + ease
-          },
-          titleStyle: {
-            margin: '0 0 26px', fontSize: '24px', fontWeight: 500, whiteSpace: 'nowrap',
-            color: open ? '#fff' : '#8a8a8a', transition: 'color .5s ease'
-          },
-          items: s.items.map((text, j) => ({
-            text,
-            style: {
-              opacity: open ? 1 : 0, transform: open ? 'none' : 'translateY(14px)',
-              transition: 'opacity .6s ease ' + (open ? 120 + j * 80 : 0) + 'ms, transform .7s ' + ease + ' ' + (open ? 120 + j * 80 : 0) + 'ms'
-            }
-          })),
-          listStyle: {
-            margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column',
-            gap: '14px', fontSize: '17px', lineHeight: 1.45, color: '#a8a8a8', minWidth: '260px'
-          },
-          letterStyle: {
-            marginTop: 'auto', fontSize: '96px', fontWeight: 500, lineHeight: 1,
-            color: '#fff', opacity: open ? 1 : .6,
-            transition: 'opacity .6s ease'
-          }
-        });
-      })
+      backLabel: this.props.backOnline ?? "Early October",
+      reelSrc: this.props.reelSrc ?? "uploads/reel-demo.mp4",
+      reelPoster: this.props.reelPoster ?? "uploads/reel-poster.jpg",
+      reelYear: this.props.reelYear ?? "2026",
+      hasReel: !!(this.props.reelSrc || "").trim(),
+      noReel: !(this.props.reelSrc || "").trim(),
+      videoRef: this.video,
+      reelBtnLabel: s.playing ? "Pause" : "Play",
+      soundBtnLabel: s.muted ? "Sound on" : "Sound off",
+      toggleReel: () => this.toggleReel(),
+      toggleSound: () => this.toggleSound(),
+      services: (this.props.services ?? SERVICES).map(label => ({
+        label, style: s.picked.includes(label) ? on : off, toggle: () => this.toggle(label)
+      })),
+      fName: s.name, fEmail: s.email, fBrief: s.brief,
+      onName: e => this.setState({ name: e.target.value }),
+      onEmail: e => this.setState({ email: e.target.value }),
+      onBrief: e => this.setState({ brief: e.target.value }),
+      error: s.error, sent: s.sent, notSent: !s.sent,
+      sentName: s.sentName, sentScope: s.sentScope, refCode: s.refCode,
+      submit: () => this.submit(), reset: () => this.reset()
     };
   }
 }
+
 </script>
 </body>
 </html>
